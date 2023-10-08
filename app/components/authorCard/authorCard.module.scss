@@ -22,7 +22,7 @@ $color-primary: #0079c8;
   }
 
   @include devices(mobile) {
-    font-size: 24px;
+    font-size: 22px;
     max-width: 250px;
   }
 }
