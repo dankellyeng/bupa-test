@@ -1,0 +1,27 @@
+@import "../../../styles/styles.scss";
+
+.books {
+  display: flex;
+  flex-direction: row;
+  @include devices(tablet) {
+    flex-direction: column;
+  }
+}
+
+.bottom {
+  width: 90%;
+  margin: 20px;
+  margin-right: auto;
+  border-top: 1px solid #999999;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  gap: 6px;
+  @include devices(tablet) {
+    flex-direction: column-reverse;
+  }
+}
