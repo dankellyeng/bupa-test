@@ -23,6 +23,6 @@
   gap: 6px;
   @include devices(tablet) {
     flex-direction: column-reverse;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
   }
 }
