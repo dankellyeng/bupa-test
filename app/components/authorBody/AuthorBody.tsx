@@ -31,7 +31,12 @@ const AuthorCard: React.FunctionComponent<any> = ({ data }) => {
             >
               Hardcover only
             </Button>
-            <Button onClick={handleGetBooksClick}>Get Books</Button>
+            <Button
+              style={{ backgroundColor: "#0079c8" }} //cannot import global color from scss file so hardcoding here
+              onClick={handleGetBooksClick}
+            >
+              Get Books
+            </Button>
           </div>
         </div>
       </div>

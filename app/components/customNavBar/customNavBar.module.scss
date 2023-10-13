@@ -1,11 +1,9 @@
 @import "../../../styles/styles.scss";
-
-$color-primary: #0079c8;
+@import "../../../styles/variables";
 
 .NavContainer {
   position: fixed;
   width: 100%;
-  // border-bottom: 2px solid #09342e;
 }
 
 .Navbar {
@@ -29,7 +27,6 @@ $color-primary: #0079c8;
   display: flex;
   justify-content: center;
   align-items: center;
-  // padding-left: 20px;
 
   &:hover {
     color: #262b29;

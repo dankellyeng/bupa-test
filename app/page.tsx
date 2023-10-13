@@ -9,7 +9,7 @@ export default async function Home() {
   if (!data) {
     return;
   }
-  let fields: any = [];
+  let fields: any = []; // any is used here since the contentful type returned is overly complicated.
 
   data.items.forEach((item: { fields: AuthorType }) => {
     fields.push(item.fields);

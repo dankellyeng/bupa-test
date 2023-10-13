@@ -1,6 +1,5 @@
 @import "../../../styles/styles.scss";
-
-$color-primary: #0079c8;
+@import "../../../styles/variables";
 
 .heading {
   background-color: $color-primary;

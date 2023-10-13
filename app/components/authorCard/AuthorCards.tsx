@@ -10,8 +10,8 @@ interface Props {
 
 function sortArray(arr: BookType[]) {
   arr.sort(function (a, b) {
-    let textA = a.name.toUpperCase();
-    let textB = b.name.toUpperCase();
+    const textA = a.name.toUpperCase();
+    const textB = b.name.toUpperCase();
     return textA < textB ? -1 : textA > textB ? 1 : 0;
   });
 }
@@ -21,9 +21,9 @@ const AuthorCards: FC<Props> = ({ ...props }) => {
     return;
   }
 
-  let authors = props.data;
-  let maleBooks: BookType[] = [];
-  let femaleBooks: BookType[] = [];
+  const authors = props.data;
+  const maleBooks: BookType[] = [];
+  const femaleBooks: BookType[] = [];
 
   authors.forEach((author) => {
     if (author.gender === "Male") {
@@ -44,8 +44,8 @@ const AuthorCards: FC<Props> = ({ ...props }) => {
   sortArray(maleBooks);
   sortArray(femaleBooks);
 
-  let gender = props.gender;
-  let bookType = props.hardcover ? "Hardcover " : "";
+  const gender = props.gender;
+  const bookType = props.hardcover ? "Hardcover " : "";
 
   return (
     <div className={authorCard.allCards}>
